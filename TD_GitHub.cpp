@@ -32,6 +32,34 @@ int plusGrand(int a, int b, int c) {
     return max;
 }
 
+//Fonctions réalisées par l'étudiant 2 :
+
+bool estPair(int nb) {
+    return (nb % 2 == 0 || nb % 7 == 0);
+}
+
+int sommeNombre(int nb) {
+    int sum = 0;
+    for (int i = nb; i >= 1; --i) {
+        sum += i;
+    }
+    return sum;
+}
+
+float salaireNet(int salaire) {
+    float salaireNet = salaire - (salaire * 0.23);
+    float prime = salaireNet * 0.12;
+    return salaireNet + prime;
+}
+
+int plusPetit(int a, int b, int c) {
+    int min = a;
+    if (b < min)
+        min = b;
+    if (c < min)
+        min = c;
+    return min;
+}
 
 
 
